@@ -1,0 +1,73 @@
+* {
+  /*Box model stuff*/
+  margin: 0;
+  padding: 0;
+  /*Typography stuff*/
+  font-family: "Poppins", sans-serif;
+  /*Miscellaneous*/
+  box-sizing: border-box;
+}
+
+body {
+  /*Miscellaneous*/
+  /* border: 1px solid black; */
+}
+
+header {
+  /*Box model stuff*/
+  border-bottom: 1px solid #c3ccd9;
+}
+
+header nav {
+  /*Display stuff*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*Box model stuff*/
+  max-width: 1080px;
+  margin: 10px auto;
+}
+
+header nav li {
+  /*Miscellaneous*/
+  list-style: none;
+}
+
+header nav ul {
+  /*Display stuff*/
+  display: flex;
+  align-items: center;
+  /*Miscellaneous*/
+  gap: 29px;
+}
+
+header .add-post,
+header .login {
+  /*Display stuff*/
+  display: flex;
+  align-items: center;
+  /*Miscellaneous*/
+  gap: 10px;
+  cursor: pointer;
+}
+
+header .add-post a,
+header .login a,
+header .register a {
+  /*Typography stuff*/
+  text-decoration: none;
+  color: #282828;
+}
+
+header .login {
+  background-color: #007dfa;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+header .login:hover {
+  background-color: #1e8dfd;
+}
+
+header .login a {
+  color: #ffffff;
+}
