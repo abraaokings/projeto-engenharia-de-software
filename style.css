@@ -16,6 +16,10 @@ body {
   justify-content: space-between;
   height: 100vh;
 }
+.logo {
+  font-family: "Pixelify Sans", Courier, monospace;
+  font-size: 24px;
+}
 
 header {
   /*Box model stuff*/
@@ -103,7 +107,7 @@ footer {
 
 .search-categorias {
   max-width: 930px;
-  margin: 25px auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -113,7 +117,18 @@ footer {
   display: inline-block;
   width: 150px;
   height: 80px;
-  background-color: #c3ccd9;
   justify-self: flex-start;
   flex: 0 1 24%;
+  background-color: none;
+  border: 1px solid #c3ccd9;
+}
+.search-categorias .cards:hover {
+  border: 1px solid #1e8dfd;
+  cursor: pointer;
+}
+
+.search-categoria-title {
+  width: 930px;
+  margin: 30px auto 20px auto;
+  color: #282828;
 }
