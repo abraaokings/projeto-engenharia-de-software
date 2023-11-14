@@ -11,6 +11,10 @@
 body {
   /*Miscellaneous*/
   /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 header {
@@ -24,7 +28,8 @@ header nav {
   justify-content: space-between;
   align-items: center;
   /*Box model stuff*/
-  max-width: 1080px;
+  max-width: 930px;
+  /* max-width: 1080px; */
   margin: 10px auto;
 }
 
@@ -70,4 +75,45 @@ header .login:hover {
 
 header .login a {
   color: #ffffff;
+}
+
+.input-search {
+  display: flex;
+  align-items: center;
+  max-width: 930px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding: 10px 16px;
+  border-radius: 50px;
+  gap: 8px;
+}
+.input-search input[type="search"] {
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+}
+
+footer {
+  width: 930px;
+  margin: 0 auto;
+}
+
+.search-categorias {
+  max-width: 930px;
+  margin: 25px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.search-categorias .cards {
+  padding: 10px;
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  background-color: #c3ccd9;
+  justify-self: flex-start;
+  flex: 0 1 24%;
 }
