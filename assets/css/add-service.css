@@ -85,16 +85,16 @@ header .login a {
   background-color: #282828;
 }
 
-.edit-perfil-container {
+.add-service-container {
   margin: 10px auto;
 }
 
-.edit-perfil-container h1 {
+.add-service-container h1 {
   max-width: 1080px;
   margin: 10px auto;
 }
 
-.edit-perfil {
+.add-service {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,61 +102,17 @@ header .login a {
   width: 100vw;
 }
 
-.edit-perfil form {
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-service,
+.foto-service,
+.preco-service,
+.desc-service {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 800px;
+  margin-bottom: 8px;
 }
-.input-full-name,
-.input-email,
-.input-number,
-.input-cidade {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  /* border: 1px solid red; */
-}
-
-.input-estado {
-  display: flex;
-  gap: 20px;
-}
-
-.input-full-name input[type="text"],
-.input-email input[type="email"],
-.input-number input[type="number"],
-.input-cidade input[type="text"] {
-  border: none;
-  border: 1px solid #c3ccd9;
-  border-radius: 8px;
-  padding: 10px 16px;
-}
-
-.input-estado-wrapper input[type="text"] {
-  border: none;
-  border: 1px solid #c3ccd9;
-  border-radius: 8px;
-  padding: 12px 16px;
-}
-
-/* .input-cidade .buttons-form {
-  display: flex;
-  gap: 10px;
-  margin: 10px 0 0 0;
-} */
-/* 
-.button-active,
-.button-voltar {
-  background-color: #007dfa;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 8px;
-  color: #ffffff;
-}
-
-.button-voltar {
-  background-color: #ffffff;
-  color: #282828;
-  border: 1px solid #282828;
-} */
