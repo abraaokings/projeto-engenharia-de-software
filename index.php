@@ -46,12 +46,12 @@ if (isset($_POST['logout'])) {
               <a href="./pages/product.php">Feed</a>
             </li>
             <li>
-              <a href="./pages/edit_product.php">Meus produtos</a>
+              <a href="./pages/lista_produtos.php">Meus produtos</a>
             </li>
             <li>
               <span class="logout">
                 <form method="post">
-                  <button type="submit" name="logout">Sair</button>
+                  <button style="padding: 8px 12px; border: none; background-color: #222; border-radius: 8px; color: #fff;" type="submit" name="logout">Sair</button>
                 </form>
               </span>
             </li>
@@ -75,7 +75,7 @@ if (isset($_POST['logout'])) {
     <div class="input-search">
       <img src="./img/search.svg" alt="">
       <form style="display: flex; justify-content: space-between; width: 100%;" action="./pages/search.php" method="GET">
-        <input type="search" name="search" placeholder="Procurar serviços">
+        <input type="search" name="search" placeholder="Ex: Pintor">
         <button style="padding: 8px 12px; border: none; background-color: #222; border-radius: 8px; color: #fff;" type="submit">Pesquisar</button>
       </form>
     </div>

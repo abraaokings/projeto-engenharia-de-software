@@ -234,25 +234,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
   <header>
     <nav>
-      <a href="./product.php" class="logo">Foryou</a>
-      <ul>
-        <li>
-          <span class="add-post">
-            <img src="../assets/img/add.svg" alt="" />
-            <a href="#">Adicionar serviço</a>
-          </span>
-        </li>
-        <li>
-          <span class="register">
-            <a href="../pages/register.html">Cadastrar</a>
-          </span>
-        </li>
-        <li>
-          <span class="login">
-            <a href="../pages/login.html">Entrar</a>
-          </span>
-        </li>
-      </ul>
+      <a class="logo" href="../index.php">Foryou</span>
+        <ul>
+          <?php if (isset($_SESSION['user_id'])) : ?>
+            <li>
+              <span class="add-post">
+                <a href="./add-service.php">Adicionar serviço</a>
+              </span>
+            </li>
+            <li>
+              <a href="./product.php">Feed</a>
+            </li>
+            <li>
+              <a href="./lista_produtos.php">Meus produtos</a>
+            </li>
+            <li>
+              <span class="logout">
+                <form method="post">
+                  <button style="padding: 8px 12px; border: none; background-color: #222; border-radius: 8px; color: #fff;" type="submit" name="logout">Sair</button>
+                </form>
+              </span>
+            </li>
+          <?php else : ?>
+            <li>
+              <span class="register">
+                <a href="./pages/register.php">Cadastrar</a>
+              </span>
+            </li>
+            <li>
+              <span class="login">
+                <a href="./pages/login.php">Entrar</a>
+              </span>
+            </li>
+          <?php endif; ?>
+        </ul>
     </nav>
   </header>
 

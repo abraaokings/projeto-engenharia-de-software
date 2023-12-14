@@ -1,5 +1,4 @@
 <?php
-// Conectando ao banco de dados
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
@@ -14,7 +13,6 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['search'])) {
   $searchTerm = $_GET['search'];
 
-  // Buscar produtos com base no termo de pesquisa
   $searchQuery = "SELECT * FROM services WHERE service_name LIKE '%$searchTerm%'";
   $searchResult = $conn->query($searchQuery);
 
@@ -26,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['search'])) {
     }
   }
 } else {
-  // Redirecionar para o index.php se nenhum termo de pesquisa for fornecido
   header('Location: ./index.php');
   exit();
 }
