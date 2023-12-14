@@ -73,7 +73,6 @@ if (isset($_POST['logout'])) {
 
   <section class="search-container">
     <div class="input-search">
-      <img src="./img/search.svg" alt="">
       <form style="display: flex; justify-content: space-between; width: 100%;" action="./pages/search.php" method="GET">
         <input type="search" name="search" placeholder="Ex: Pintor">
         <button style="padding: 8px 12px; border: none; background-color: #222; border-radius: 8px; color: #fff;" type="submit">Pesquisar</button>
